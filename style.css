@@ -1,17 +1,22 @@
 *{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #2B1B12;
+    box-sizing: border-box;
 
 }
 body{
-    padding: 10px 50px;
     background: #FEF7F2;
 }
 header{
+    padding: 10px 50px;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+
+}
+section{
+    padding: 10px 50px;
 
 }
 header ul{
@@ -168,4 +173,248 @@ header ul li a{
 }
 #dream-home .text div span strong{
     font-size: 14px;
+}
+
+#residence{
+    display: flex;
+    flex-direction: column;
+}
+#why-choose{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+#why-choose h1{
+    font-size: 30px;
+}
+#why-choose strong{
+    width: 500px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#why-choose div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#why-choose div article{
+    background: #DDC7BB;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    
+}
+#why-choose div article img{
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+#residence-wrap{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    flex: 1;
+}
+.residence-container img:nth-child(1){
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+}
+.residence-container .text img{
+    width: 30px;
+    height: 30px;
+}
+.residence-container{
+    background: #DDC7BB;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    border: none;
+    border-radius: 10px;
+    flex: 1;
+}
+.residence-container main{
+    padding: 10px;
+}
+#residence button{
+    width: 80px;
+    margin-top: 10px;
+    padding: 5px 1px 10px;
+    font-size: 16px;
+}
+#residence .res-wrap{
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: repeat(2,1fr);
+}
+#residence .res-wrap img{
+    display: inline-flex;
+    align-self: center;
+    border-radius: 5px;
+    background: #fff;
+}
+
+#residence .res-wrap div,#residence .residence-container div:first-child{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    gap: 5px;
+}
+#residence strong{
+    margin-top: 10px;
+    font-size: 20px;
+}
+#residence h1{
+    font-size: 30px;
+    margin-top: 50px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#opinion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#opinion h1{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    width: 400px;
+    font-weight: bolder;
+    color: #2B1B12;
+}
+#opinion #opinion-wrap{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex: 1;
+}
+#opinion #opinion-wrap .opinion-container{
+    max-width: 300px;
+    border: none;
+    background: #DDC7BB;
+    border-radius: 10px;
+}
+#opinion #opinion-wrap .opinion-container .opinions{
+    padding: 10px;
+}
+#opinion #opinion-wrap .opinion-container .opinions div:first-child{
+    display: flex;
+    justify-content: space-around;
+}
+#opinion #opinion-wrap .opinion-container .opinions div .rating{
+    background: #fff;
+    display: flex;
+    height: 25px;
+    padding: 0px 2px;
+    border-radius: 5px;
+    margin-top: 15px;
+    align-items: center;
+}
+#opinion #opinion-wrap .opinion-container .opinion-image{
+    max-width: 300px;
+    border-radius: 10px 10px 0px 0px;
+}
+#opinion .arrows img{
+    background: #2B1B12;
+    border-radius: 50%;
+    padding: 10px 15px;
+    margin: 10px;
+}
+#faq{
+    display: flex;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#faq h1{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bolder;
+    width: 500px;
+}
+#faq div{
+    display: flex;
+}
+#faq div img{
+    margin-left: 20px;
+}
+#faq .input-wrap{
+    width: 400px;
+    background: #DDC7BB;
+    padding: 10px 20px;
+    padding-right: 5px;
+    border-radius: 10px;
+}
+#faq form{
+    display: flex;
+    margin-top: 50px;
+}
+#faq form #email{
+    width: 450px;
+    font-size: 20px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+#faq form #email::placeholder{
+    color: #543E32;
+
+}
+#faq form input.signup{
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+footer{
+    display: flex;
+    width: 98vw;
+    background: #DDC7BB;
+    height: 70vh;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 0px !important;
+    justify-content: space-evenly;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+}
+footer .intro img{
+    width: 100px;
+    height: 100px;
+}
+footer .intro strong{
+    width: 200px;   
+}
+footer .social-wrap{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-direction: row;
+    align-items: center;
+}
+footer .social-wrap img{
+    width: 20px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+footer .more-info a{
+    text-decoration: none;
+}
+footer a:not(.social-wrap){
+    margin-top: 10px;
 }
