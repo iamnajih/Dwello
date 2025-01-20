@@ -61,28 +61,28 @@ header ul li a{
 #main{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 #main img{
     width: 64%;
 }
 #main .text{
+    z-index: 1;
     display: flex;
+    width: 400px;
     flex-direction: column;
 }
-#main .text{
-    width: 400px;
-}
 #main .text h1{
-    width: 400px;
-    font-size: 60px;
+    width: 600px;
+    font-size:80px;
     text-transform: capitalize;
     color: #2B1B12;
     margin-bottom: 0px;
 }
 #main .text p{
     font-weight: 700;
-    width: 400px;
-    font-size: 18px;
+    width: 500px;
+    font-size: 24px;
     color: #4F3527;
 }
 
@@ -93,9 +93,11 @@ header ul li a{
     justify-content: space-evenly;
     justify-self: center;
     width: 900px;
-    padding: 20px;
+    padding: 30px 20px;
     border-radius: 10px;
     background: #DDC7BB;
+    position: relative;
+    bottom: 170px;
 }
 #btn-container button:not(.signup){
     flex: 1;
@@ -133,26 +135,26 @@ header ul li a{
 #dream-home{
     display: flex;
     height: 60vh;
-    margin-top: 50px;
-}
-#dream-home .text{
-    margin-left: 50px;
-    width: 100%;
 }
 
 #dream-home img{
     width: 500px;
 }
 
+#dream-home .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 #dream-home .text div{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 #dream-home .text div span{
-    width: 100px;
+    max-width: 150px;
     flex: 1;
-    overflow-x: hidden;
 }
 #dream-home .text h2{
     font-size: 35px;
@@ -203,10 +205,10 @@ header ul li a{
     background: #DDC7BB;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 20px;
     margin: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     
 }
 #why-choose div article img{
@@ -235,7 +237,7 @@ header ul li a{
     background: #DDC7BB;
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    max-width: 400px;
     border: none;
     border-radius: 10px;
     flex: 1;
@@ -283,6 +285,7 @@ header ul li a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: #FEF7F2;
 }
 #opinion h1{
     text-align: center;
@@ -300,7 +303,7 @@ header ul li a{
     flex: 1;
 }
 #opinion #opinion-wrap .opinion-container{
-    max-width: 300px;
+    max-width: 400px;
     border: none;
     background: #DDC7BB;
     border-radius: 10px;
@@ -322,7 +325,7 @@ header ul li a{
     align-items: center;
 }
 #opinion #opinion-wrap .opinion-container .opinion-image{
-    max-width: 300px;
+    max-width: 400px;
     border-radius: 10px 10px 0px 0px;
 }
 #opinion .arrows img{
